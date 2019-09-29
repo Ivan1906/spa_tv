@@ -2,19 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>TV shows</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
   </head>
 
   <body>
     <section id="content">
       <header>
-        <h1>tranding фільми/серіали</h1>
+        <h1>TV shows</h1>
       </header>
       <main>
-        <input type="text" id="search" placeholder="Movie name" />
-        <input type="button" id="btnSearch" value="Search" />
-        <article id="partial"></article>
+        <section id="typeTV">
+          <input
+            type="radio"
+            id="popularTV"
+            name="tv"
+            data-typeTV="tv/popular"
+            checked
+          />
+          <label for="popularTV">Popular TV shows</label>
+
+          <input
+            type="radio"
+            id="topRatedTV"
+            name="tv"
+            data-typeTV="tv/top_rated"
+          />
+          <label for="contactChoice2">Top Rated TV shows</label>
+        </section>
+
+        <article id="modal"></article>
+
+        <section id="listTVShows"></section>
+        <section id="pagination"></section>
       </main>
     </section>
     <script type="module" src="src/index.mjs"></script>
