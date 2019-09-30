@@ -25,5 +25,16 @@ input[type='button'] {
 li {
   cursor: pointer;
   width: max-content;
-  margin: 3px 0;
+  margin: 2px 0;
+  list-style: decimal-leading-zero;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  background-color: aliceblue;
+}
+
+li:hover {
+  font-weight: bold;
+  text-shadow: blue 1px 1px;
+  border-style: hidden;
+  font-size: larger;
 }
